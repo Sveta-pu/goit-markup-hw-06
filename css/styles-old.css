@@ -82,6 +82,23 @@ a {
   padding: 188px 0;
 }
 
+.hero-button,
+.footer-form-btn {
+  font-size: 16px;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;

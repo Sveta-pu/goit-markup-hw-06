@@ -462,3 +462,106 @@ img {
       url(../images/people-office@2x.jpg);
   }
 }
+/* section focus mobaile */
+
+.focus-item {
+  margin-bottom: 72px;
+}
+
+.focus {
+  padding-top: 99px;
+  padding-bottom: 96px;
+}
+.focus-icon {
+  display: none;
+}
+
+.focus-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.focus-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .focus {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .focus-item {
+    margin-bottom: 72px;
+  }
+  .focus-icon {
+    display: none;
+  }
+  .focus-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .focus-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .focus-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+  }
+
+  .focus-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .focus {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 120px 0 120px;
+  }
+
+  .focus-list {
+    display: flex;
+    list-style-type: none;
+    font-style: normal;
+    gap: 24px;
+  }
+
+  .focus-item {
+    flex-basis: calc((100% - 3 * 24px) / 4); /* 4 елементи, 3 відступи */
+    box-sizing: border-box;
+  }
+
+  .focus-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+
+  .focus-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+}
