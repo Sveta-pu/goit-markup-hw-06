@@ -703,11 +703,9 @@ img {
     margin-top: 8px;
   }
 }
-/* mobaile section portfolio */
+/* mobile section portfolio */
 
 .portfolio {
-  /* width: 329px; */
-  height: 2752px;
   padding-bottom: 96px;
   padding-top: 96px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -765,11 +763,12 @@ img {
     width: 356px;
     height: 300px;
   }
+
   .portfolio {
-    width: 736px;
-    height: 1516px;
-    padding-bottom: 96px;
-    padding-top: 96px;
+    width: 100%;
+    /* max-width: 768px; */
+    padding: 96px 0;
+    margin: 0 auto;
   }
   .portfolio-list {
     display: flex;
@@ -782,12 +781,24 @@ img {
   .portfolio-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    /* align-items: left; */
+    /* padding-left: 24; */
+    padding-right: 0;
+  }
+
+  .footer-container {
+    padding-left: 108px;
+    gap: 0;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .portfolio {
     width: 1440px;
-    height: 780px;
     margin: 0 auto;
     padding: 120px 0 120px 0;
   }
@@ -845,5 +856,198 @@ img {
   .portfolio-box {
     position: relative;
     overflow: hidden;
+  }
+}
+/* mobile footer section */
+.footer {
+  background-color: #2e2f42;
+  padding: 96px 0;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #4d5ae5;
+  text-transform: uppercase;
+}
+
+.logo-part-footer {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
+  max-width: 288px;
+  /* text-align: center; */
+}
+
+.social-links {
+  text-align: left;
+  margin-top: 72px;
+  margin-bottom: 16px;
+}
+
+.social-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-icon-link {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms ease;
+}
+
+.footer-icon-link:hover {
+  background-color: #31d0aa;
+}
+
+.footer-icon-svg {
+  fill: #f4f4fd;
+}
+
+.footer-form-title {
+  text-align: left;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: #fff;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.footer-form-input {
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 288px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.footer-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn {
+  background-color: #4d5ae5;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 250ms ease;
+}
+
+.footer-form-btn:hover {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .footer {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 72px 24px;
+  }
+  .footer-column {
+    max-width: 264px;
+  }
+  .footer-text {
+    text-align: left;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .footer-form-input {
+    flex-grow: 1;
+    max-width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1158px;
+    margin: 0 auto;
+  }
+
+  .footer-container-main {
+    flex-basis: 264px;
+  }
+
+  .footer-container-social {
+    flex-basis: 208px;
+  }
+
+  .footer-container-subscribtion {
+    flex-basis: 453px;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .footer .nav-logo {
+    justify-content: start;
+  }
+
+  .footer-container-subscribtion-form {
+    flex-direction: row;
+    gap: 24px;
   }
 }
