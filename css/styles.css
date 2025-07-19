@@ -941,7 +941,7 @@ img {
 }
 .footer {
   background-color: #2e2f42;
-  /* padding: 96px 16px; */
+  padding: 96px 0px;
   color: #fff;
   /* text-align: center; */
 }
@@ -950,7 +950,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 16px;
+  padding: 0px 16px;
   text-align: center;
 }
 
@@ -1135,6 +1135,10 @@ img {
   .social-links,
   .footer-form-container {
     flex-shrink: 0;
+  }
+
+  .social-links {
+    margin-right: 80px;
   }
 
   .footer-form-container {
